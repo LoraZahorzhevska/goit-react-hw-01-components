@@ -25,7 +25,20 @@ const App = () => (
   // </div>
 
   // <FriendList friends={friends} />
-  <container>
+  // <container>
+  //   <Profile
+  //     name={user.name}
+  //     tag={user.tag}
+  //     location={user.location}
+  //     avatar={user.avatar}
+  //     stats={user.stats}
+  //   />
+  //   <Statistics title="Upload stats" stats={statistics} />
+  //   <FriendList friends={friends} />
+  //   <TransactionHistory items={transactions} />
+  // </container>
+
+  <>
     <Profile
       name={user.name}
       tag={user.tag}
@@ -36,7 +49,7 @@ const App = () => (
     <Statistics title="Upload stats" stats={statistics} />
     <FriendList friends={friends} />
     <TransactionHistory items={transactions} />
-  </container>
+  </>
   // <TransactionHistory items={transactions} />
 );
 
