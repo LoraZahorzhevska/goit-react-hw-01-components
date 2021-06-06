@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 // import DefaultImg from "../../components/default.jpg";
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
-    <div class="profile">
+    <div>
       <div class="description">
         <img src={avatar} alt="Аватар пользователя" class="avatar" />
         <p class="name">{name}</p>
