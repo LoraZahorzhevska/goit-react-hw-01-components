@@ -1,0 +1,22 @@
+.description {
+  width: 320px;
+  margin: 10px auto;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.stats {
+  padding: 0;
+  list-style: none;
+}
+
+.listStats {
+  display: inline-block;
+  width: 33.3%;
+}
