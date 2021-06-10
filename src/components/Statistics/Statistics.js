@@ -4,7 +4,7 @@ import styles from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
-    {title && <h2 class="title">{title}</h2>}
+    {title && <h2>{title}</h2>}
 
     <ul className={styles.statList}>
       {stats.map(({ id, label, percentage }) => (

@@ -1,24 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import styles from './FriendList.module.css';
 
-const FriendListItem = ({ avatar, name, isOnline }) => (
-  <li className={styles.item}>
-    {/* {isOnline ? <Span online /> : <Span />} */}
+const FriendListItem = ({ avatar, name, isOnline, id }) => (
+  <li className={styles.item} key={id}>
     <span className={isOnline ? styles.Online : styles.Offline}></span>
-    <img class="avatar" src={avatar} alt={name} width="48" />
-    <p class="name">{name}</p>
+    <img src={avatar} alt={name} width="48" />
+    <p>{name}</p>
   </li>
 );
 
 // FriendListItem.defaultProps = {
 //   url: DefaultImg,
 // };
-
-FriendListItem.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.string.isRequired,
-};
 
 export default FriendListItem;
